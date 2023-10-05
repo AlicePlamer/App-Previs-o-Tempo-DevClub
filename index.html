@@ -10,15 +10,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Open+Sans:wght@300;500;700&family=Oswald&display=swap"
         rel="stylesheet">
+        <script src="script.js"></script>
     <title>Previsão do Tempo</title>
 </head>
 
 <body>
 
     <div class="caixa-maior">
-        <input placeholder="Digite o nome da cidade">
+        <input class="input-city" placeholder="Digite o nome da cidade">
 
-        <button class="search-button">
+        <button class="search-button" onclick="clickbutton()">
              <img class="img-search" alt="busca" src="https://www.svgrepo.com/show/488200/find.svg">
         </button>
 
@@ -32,7 +33,7 @@
                 <p class="text-weather">Nublado</p>
             </div>
 
-            <p class="umidade">Umidade: 76%</p>
+            <p class="humidity">Umidade: 76%</p>
 
         </div>
 
