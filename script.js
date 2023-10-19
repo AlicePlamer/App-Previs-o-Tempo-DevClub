@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 const key = "61cdf1a8f0fdec0cd33c9cb401b21509"
 
 function showData(data){
@@ -27,3 +29,16 @@ function clickbutton(){
 
 }
 
+document.querySelector(".input-city").addEventListener("keyup", function(event){
+
+    if (event.key === "Enter") {
+
+        clickbutton();
+
+    }
+
+    
+});
+
+document.querySelector(".search-button").addEventListener("click", clickbutton);
+});
